@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  
+  <script src="https://unpkg.com/http-vue-loader"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script> 
+
+  <!-- this is for fetch api from backend -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+  <div id="basic">
+    <top-logo></top-logo>
+    
+    <nav-bar1></nav-bar1>
+    <svg-image></svg-image>
+    <about-fastcode></about-fastcode>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <v-container >
+      <br>
+      <br>
+      <br>
+      <problem-achiver></problem-achiver>
+      <br>
+      <br>
+    <editor></editor>
+    <submit-answer></submit-answer>
+    
+      
+  </v-container>
+  <footer-end></footer-end>
+
+
+  
+
+</div>
+
+  
+  
+
+
+
+
+
+
+
+
+  
+
+</body> 
+
+
+
+
+<script>
+  
+
+
+
+
+
+
+
+       new Vue({
+              el: '#basic',
+              
+              vuetify: new Vuetify(),
+              components: {
+                'top-logo':httpVueLoader('top-logo.vue'),
+                'nav-bar1':httpVueLoader('nav-bar1.vue'),
+                'svg-image':httpVueLoader('svg-image.vue'),
+                'about-fastcode':httpVueLoader('about-fastcode.vue'),
+                'editor':httpVueLoader('editor.vue'),
+                'submit-answer':httpVueLoader('submit-answer.vue'),
+                'footer-end':httpVueLoader('footer-end.vue'),
+                'problem-achiver':httpVueLoader('problem-achiver.vue'),
+              },
+              
+              
+              
+          });
+
+
+
+
+
+
+
+
+</script>
+
+</html>
